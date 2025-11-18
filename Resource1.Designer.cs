@@ -22,7 +22,7 @@ namespace WinFormsRPC {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource1 {
+    public class Resource1 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace WinFormsRPC {
         ///   Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WinFormsRPC.Resource1", typeof(Resource1).Assembly);
@@ -51,7 +51,7 @@ namespace WinFormsRPC {
         ///   обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,47 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap create_icon {
+        public static System.Drawing.Bitmap arrayA_icon24 {
+            get {
+                object obj = ResourceManager.GetObject("arrayA_icon24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap arrayA_icon50 {
+            get {
+                object obj = ResourceManager.GetObject("arrayA_icon50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap arrayB_icon24 {
+            get {
+                object obj = ResourceManager.GetObject("arrayB_icon24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap arrayB_icon50 {
+            get {
+                object obj = ResourceManager.GetObject("arrayB_icon50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap create_icon {
             get {
                 object obj = ResourceManager.GetObject("create_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +113,7 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap database_icon {
+        public static System.Drawing.Bitmap database_icon {
             get {
                 object obj = ResourceManager.GetObject("database_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -81,19 +121,19 @@ namespace WinFormsRPC {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Icon logo {
+        public static System.Drawing.Bitmap filter_icon {
             get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                object obj = ResourceManager.GetObject("filter_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap random_generation {
+        public static System.Drawing.Bitmap random_generation {
             get {
                 object obj = ResourceManager.GetObject("random_generation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +143,7 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap random_nums_icon {
+        public static System.Drawing.Bitmap random_nums_icon {
             get {
                 object obj = ResourceManager.GetObject("random_nums_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +153,7 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap save_button {
+        public static System.Drawing.Bitmap save_button {
             get {
                 object obj = ResourceManager.GetObject("save_button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,9 +163,19 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sort_icon {
+        public static System.Drawing.Bitmap sort_icon {
             get {
                 object obj = ResourceManager.GetObject("sort_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap transfer_icon {
+            get {
+                object obj = ResourceManager.GetObject("transfer_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
