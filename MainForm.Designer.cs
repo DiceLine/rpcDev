@@ -5,9 +5,13 @@
         bool isFilterMenuOpen;
         bool haveSqlMode;
         bool haveTransferMode;
+        bool haveRandomMode;
 
-        //int arrayA
-        //int arrayB
+        private List<int> originalArray = new List<int>();
+        private List<int> sortedArray = new List<int>();
+
+        private DatabaseConfig dbConfig;
+        private string configFilePath = "config.xml";
 
         /// <summary>
         ///  Required designer variable.
@@ -49,7 +53,6 @@
             pictureBox1 = new PictureBox();
             textBoxArrayB = new TextBox();
             buttonSave = new Button();
-            label1 = new Label();
             checkBoxNotSorted = new CheckBox();
             checkBoxSorted = new CheckBox();
             groupBoxArrayList = new GroupBox();
@@ -224,16 +227,6 @@
             buttonSave.UseVisualStyleBackColor = true;
             buttonSave.Click += buttonSave_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(104, 540);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(51, 21);
-            label1.TabIndex = 19;
-            label1.Text = "label1";
-            // 
             // checkBoxNotSorted
             // 
             checkBoxNotSorted.AutoSize = true;
@@ -366,7 +359,6 @@
             ClientSize = new Size(1463, 654);
             Controls.Add(buttonSqlMode);
             Controls.Add(groupBoxArrayList);
-            Controls.Add(label1);
             Controls.Add(buttonSave);
             Controls.Add(groupBoxArrayB);
             Controls.Add(groupBoxArrayA);
@@ -403,7 +395,6 @@
         private GroupBox groupBoxArrayB;
         private Button buttonCreate;
         private Button buttonSave;
-        private Label label1;
         private TextBox textBoxArrayA;
         private TextBox textBoxArrayB;
         private CheckBox checkBoxNotSorted;
