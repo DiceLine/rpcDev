@@ -101,6 +101,7 @@
             dataGridViewArrayA.RowTemplate.Height = 25;
             dataGridViewArrayA.Size = new Size(338, 355);
             dataGridViewArrayA.TabIndex = 7;
+            dataGridViewArrayA.CellEndEdit += dataGridViewArrayA_CellEndEdit;
             // 
             // dataGridViewArrayB
             // 
@@ -118,7 +119,6 @@
             // comboBoxArrayList
             // 
             comboBoxArrayList.FormattingEnabled = true;
-            comboBoxArrayList.Items.AddRange(new object[] { "weqwdWQD", "qwdwQWDQW", "QWDqwdwQ", "qwdQWDqwdQWD", "qwdQWDqw", "WQDqwdQWDqw", "1``2342443eqwdd3qeasfdgsfsadssdfbddasdfdsdfdDFADDAFDDasdsfasas", "wqdqawd" });
             comboBoxArrayList.Location = new Point(9, 31);
             comboBoxArrayList.Margin = new Padding(4);
             comboBoxArrayList.Name = "comboBoxArrayList";
@@ -188,6 +188,7 @@
             maskedTextBoxArraySize.Name = "maskedTextBoxArraySize";
             maskedTextBoxArraySize.Size = new Size(44, 29);
             maskedTextBoxArraySize.TabIndex = 0;
+            maskedTextBoxArraySize.KeyPress += maskedTextBoxArraySize_KeyPress;
             // 
             // groupBoxRandom
             // 
@@ -207,6 +208,7 @@
             maskedTextBoxRandBegin.Name = "maskedTextBoxRandBegin";
             maskedTextBoxRandBegin.Size = new Size(53, 29);
             maskedTextBoxRandBegin.TabIndex = 28;
+            maskedTextBoxRandBegin.KeyPress += maskedTextBoxRandBegin_KeyPress;
             // 
             // maskedTextBoxRandEnd
             // 
@@ -214,6 +216,7 @@
             maskedTextBoxRandEnd.Name = "maskedTextBoxRandEnd";
             maskedTextBoxRandEnd.Size = new Size(54, 29);
             maskedTextBoxRandEnd.TabIndex = 1;
+            maskedTextBoxRandEnd.KeyPress += maskedTextBoxRandEnd_KeyPress;
             // 
             // labelRandom
             // 
