@@ -107,9 +107,24 @@ namespace WinFormsRPC
             }
         }
 
+        private void UpdateGridView()
+        {
+            dataGridViewArrayA.Rows.Clear();
+            dataGridViewArrayB.Rows.Clear();
+
+            foreach (var item in originalArray)
+                dataGridViewArrayA.Rows.Add(item);
+
+            foreach (var item in sortedArray)
+                dataGridViewArrayB.Rows.Add(item);
+        }
+
         public MainForm()
         {
             InitializeComponent();
+
+            LoadDatabaseConfig();
+            UpdateGridView();
 
             isFilterMenuOpen = false;
             haveSqlMode = false;
@@ -127,12 +142,6 @@ namespace WinFormsRPC
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (!haveSqlMode)
-            {
-                MessageBox.Show("Включите режим работы с БД!");
-                return;
-            }
-
             try
             {
                 EnsureDatabaseStructure();
@@ -295,14 +304,15 @@ namespace WinFormsRPC
 
         private void buttonSqlMode_Click(object sender, EventArgs e)
         {
-            if (!haveSqlMode)
+            haveSqlMode = !haveSqlMode;
+
+            if (haveSqlMode)
             {
                 comboBoxArrayList.Visible = true;
                 textBoxArrayA.Visible = true;
                 textBoxArrayB.Visible = true;
                 buttonSave.Enabled = true;
                 groupBoxArrayList.Visible = true;
-                haveSqlMode = true;
                 return;
             }
 
@@ -311,19 +321,19 @@ namespace WinFormsRPC
             textBoxArrayB.Visible = false;
             buttonSave.Enabled = false;
             groupBoxArrayList.Visible = false;
-            haveSqlMode = false;
         }
 
         private void buttonRandom_Click(object sender, EventArgs e)
         {
-            if (!haveRandomMode)
-            {
+            var rnd = new Random();
+            originalArray = Enumerable.Range(0, 10).Select(x => rnd.Next(-100, 100)).ToList();
+            sortedArray.Clear();
+            textBoxArrayB.Clear();
+            UpdateGridView();
 
-                haveRandomMode = true;
-                return;
-            }
-            haveRandomMode = false;
         }
+
+
 
         private void hideControl(Control obj, out bool trigger)
         {
@@ -375,6 +385,41 @@ namespace WinFormsRPC
                 return;
             }
             hideControl(groupBoxFilter, out isFilterMenuOpen);
+        }
+
+        private void buttonDeleteA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDeleteB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSqlDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxNotSorted_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxSorted_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

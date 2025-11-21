@@ -123,6 +123,16 @@ namespace WinFormsRPC {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap delete_icon {
+            get {
+                object obj = ResourceManager.GetObject("delete_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap filter_icon {
             get {
                 object obj = ResourceManager.GetObject("filter_icon", resourceCulture);
@@ -136,16 +146,6 @@ namespace WinFormsRPC {
         public static System.Drawing.Bitmap random_generation {
             get {
                 object obj = ResourceManager.GetObject("random_generation", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap random_nums_icon {
-            get {
-                object obj = ResourceManager.GetObject("random_nums_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
