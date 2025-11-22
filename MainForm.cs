@@ -206,6 +206,7 @@ namespace WinFormsRPC
             groupBoxArrayList.Visible = false;
             groupBoxFilter.Visible = false;
             groupBoxTransfer.Visible = false;
+            buttonSqlDelete.Enabled = false;
         }
 
         private void EnsureDatabaseAndTable()
